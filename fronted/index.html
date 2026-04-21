@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modas Maldonado Boutique</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- FRANJA SUPERIOR -->
+  <header class="topbar">
+    <div class="topbar-track">
+      <div class="topbar-marquee">
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+      </div>
+
+      <div class="topbar-marquee" aria-hidden="true">
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+        <span>Bienvenida a Modas Maldonado Boutique ✨</span>
+        <span>Contáctanos por WhatsApp</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="main-header">
+    <div class="container header-grid">
+      <nav class="nav-left">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="logo-center">
+        <img src="assets/logo/logo-modas-maldonado.png" alt="Logo Modas Maldonado" />
+      </div>
+
+      <div class="header-actions">
+        <div class="search-container">
+          <button class="icon-btn" aria-label="Buscar" id="search-toggle" type="button">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <div class="search-box" id="search-box">
+            <div class="search-box-inner">
+              <i class="ri-search-line"></i>
+              <input
+                type="text"
+                id="product-search"
+                placeholder="Buscar productos..."
+                autocomplete="off"
+              >
+            </div>
+          </div>
+        </div>
+
+        <button class="icon-btn cart-btn" aria-label="Carrito" id="open-cart" type="button">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-main-image">
+      <img
+        src="assets/images/logo-portada-modas-maldonado.png"
+        alt="Portada principal de Modas Maldonado Boutique"
+      >
+    </div>
+
+    <div class="container hero-centered">
+      <h1>Elegancia que resalta tu estilo</h1>
+      <p class="hero-description">
+        Descubre carteras, zapatos y accesorios pensados para mujeres que aman verse
+        auténticas, delicadas y seguras en cada ocasión.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DINÁMICOS -->
+  <section class="products-section" id="productos">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Productos que enamoran tu estilo</h2>
+        <p>
+          Descubre piezas femeninas y elegantes que realzan tu look con delicadeza,
+          modernidad y el estilo único de Modas Maldonado Boutique.
+        </p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <p class="loading-products">Cargando productos...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS DINÁMICAS -->
+  <section class="categories-section" id="categorias">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Explora por categoría</h2>
+        <p>
+          Encuentra fácilmente lo que buscas dentro de nuestras principales líneas de productos.
+        </p>
+      </div>
+
+      <div class="categories-grid" id="categories-grid">
+        <button class="category-card active" data-category="todos" type="button">Todos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Estamos para ayudarte</h2>
+        <p>
+          Escríbenos por WhatsApp para consultas, pedidos o más información sobre nuestros productos.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <a href="https://wa.me/593989455281" target="_blank" class="contact-whatsapp">
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a
+    href="https://wa.me/593989455281"
+    class="floating-whatsapp"
+    target="_blank"
+    aria-label="WhatsApp Modas Maldonado"
+  >
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <!-- OVERLAY CARRITO -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- CARRITO -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-sidebar-header">
+      <h3>Tu carrito</h3>
+      <button
+        class="close-cart-btn"
+        id="close-cart"
+        aria-label="Cerrar carrito"
+        type="button"
+      >
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="cart-sidebar-columns">
+      <span>PRODUCTO</span>
+      <span>TOTAL</span>
+    </div>
+
+    <div class="cart-sidebar-body" id="cart-items">
+      <p class="empty-cart-message">Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-sidebar-footer">
+      <div class="cart-total">
+        <span>Total estimado</span>
+        <strong id="cart-total-price">$0.00</strong>
+      </div>
+
+      <p class="cart-note">
+        Impuestos, descuentos y envío se coordinan por WhatsApp.
+      </p>
+
+      <button class="send-whatsapp-btn" id="send-cart-whatsapp" type="button">
+        Enviar pedido por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

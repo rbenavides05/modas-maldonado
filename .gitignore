@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+*.key
+*.crt
+*.csr
+.DS_Store
+.vscode/
